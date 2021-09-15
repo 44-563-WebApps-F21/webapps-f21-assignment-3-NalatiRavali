@@ -80,6 +80,7 @@
 <h1>Geometry Polygons</h1>
 double area(const vector<point>& fig) {
     double res = 0;
+    <blockquote site = "https://cp-algorithms.com/geometry/area-of-simple-polygon.htm">
     for (unsigned i = 0; i < fig.size(); i++) {
         point p = i ? fig[i - 1] : fig.back();
         point q = fig[i];
@@ -87,7 +88,6 @@ double area(const vector<point>& fig) {
     }
     return fabs(res) / 2;
 }
-     <blockquote site = "https://cp-algorithms.com/geometry/area-of-simple-polygon.htm">
         </blockquote>
 
 
